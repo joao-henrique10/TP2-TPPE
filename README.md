@@ -54,13 +54,13 @@ public class CadastroProduto {
 
 &emsp;&emsp;Após análise vejo que o código que fizemos está bes estruturado, porém poderia ter algumas melhorias, como:
 - Validação de Entrada:
-  - A validação de entrada pode ser mais granular. Em vez de verificar cada campo individualmente, você pode criar métodos na classe Produto para validar diferentes aspectos, como validar se uma string está em branco ou se um valor numérico é válido. Isso pode tornar o código mais modular e fácil de manter.
+  - A validação de entrada pode ser mais granular. Em vez de verificar cada campo individualmente, podemos criar métodos na classe Produto para validar diferentes aspectos, como validar se uma string está em branco ou se um valor numérico é válido. Isso pode tornar o código mais modular e fácil de manter.
 - Tratamento de Exceções:
-  - O tratamento de exceções pode ser melhorado. No momento, você está lançando exceções específicas, o que é bom, mas seria útil adicionar mensagens informativas às exceções para que os desenvolvedores saibam exatamente qual campo está causando o problema.
+  - O tratamento de exceções pode ser melhorado. No momento, estamos lançando exceções específicas, o que é bom, mas seria útil adicionar mensagens informativas às exceções para que os desenvolvedores saibam exatamente qual campo está causando o problema.
 - Utilização de Métodos Utilitários:
-  - Para melhorar a legibilidade do código, você pode criar métodos utilitários para verificar se uma string está em branco, se um valor numérico é inválido, etc. Isso pode reduzir a redundância e melhorar a manutenção.
+  - Para melhorar a legibilidade do código, podemos criar métodos utilitários para verificar se uma string está em branco, se um valor numérico é inválido, etc. Isso pode reduzir a redundância e melhorar a manutenção.
 - Usar Enums para Categorias:
-  - Se possível, considere o uso de Enums para representar as categorias dos produtos em vez de permitir que elas sejam nulas. Isso pode tornar o código mais seguro e evitar possíveis NullPointerExceptions.
+  - Se possível, seria bom considerarmos o uso de Enums para representar as categorias dos produtos em vez de permitir que elas sejam nulas. Isso pode tornar o código mais seguro e evitar possíveis NullPointerExceptions.
 
 &emsp;&emsp;Abaixo uma versão modificada do nosso código com algumas dessas possíveis melhorias:
 ```
@@ -177,13 +177,13 @@ public class GestaoTransacoes {
 &emsp;&emsp;Após análise vejo que o código que fizemos está bes estruturado, porém poderia ter algumas melhorias, como:
 
 - Validação de Entrada:
-    - Assim como no código anterior, a validação de entrada pode ser mais granular. Você pode criar métodos utilitários na classe Transacao para verificar se a data é nula e se a lista de produtos está vazia, por exemplo.
+    - Assim como no código anterior, a validação de entrada pode ser mais granular. Podemos criar métodos utilitários na classe Transacao para verificar se a data é nula e se a lista de produtos está vazia, por exemplo.
 - Uso de Enums:
-    - O uso de enums para representar o tipo de transação é uma boa prática. No entanto, certifique-se de que a classe Transacao esteja usando o enum TipoTransacao em vez de um simples String.
+    - O uso de enums para representar o tipo de transação é uma boa prática. No entanto, temos que certificar de que a classe Transacao esteja usando o enum TipoTransacao em vez de um simples String.
 - Método atualizarEstoque:
-    - O método atualizarEstoque faz um bom trabalho ao iterar sobre os produtos da transação e atualizar o estoque. No entanto, considere extrair a lógica de atualização do estoque para a classe Produto para manter a coesão e seguir o princípio de responsabilidade única.
+    - O método atualizarEstoque faz um bom trabalho ao iterar sobre os produtos da transação e atualizar o estoque. No entanto, consideramos extrair a lógica de atualização do estoque para a classe Produto para manter a coesão e seguir o princípio de responsabilidade única.
 - Validação de Transação:
-    - O método validarTransacao verifica se a quantidade de produtos em uma transação é negativa. Considere lançar uma exceção mais específica (talvez QuantidadeNegativaException) para fornecer informações mais detalhadas sobre o erro.
+    - O método validarTransacao verifica se a quantidade de produtos em uma transação é negativa. Consideramos lançar uma exceção mais específica (talvez QuantidadeNegativaException) para fornecer informações mais detalhadas sobre o erro.
 
 &emsp;&emsp;Abaixo uma versão modificada do nosso código com algumas dessas possíveis melhorias:
 
@@ -314,13 +314,13 @@ public class RastreamentoLoteValidade {
 &emsp;&emsp;Após análise vejo que o código que fizemos está bem estruturado, porém poderia ter algumas melhorias, como:
 
 - Nomenclatura de Métodos:
-    - A nomenclatura dos métodos está bastante clara, mas considere adicionar um prefixo descritivo, como "calcular" ou "verificar", para tornar o propósito do método ainda mais óbvio.
+    - A nomenclatura dos métodos está bastante clara, mas consideramos adicionar um prefixo descritivo, como "calcular" ou "verificar", para tornar o propósito do método ainda mais óbvio.
 - Constantes para Números Mágicos:
     - Os números mágicos no código (como 10 e 0.8) podem ser substituídos por constantes com nomes descritivos para melhorar a legibilidade e facilitar futuras modificações.
 - Uso de Enums:
-    - Se possível, considere o uso de Enums para representar o estado do lote (por exemplo, "próximo ao vencimento"). Isso pode tornar o código mais legível e facilitar futuras alterações.
+    - Se possível, seria bom considerar o uso de Enums para representar o estado do lote (por exemplo, "próximo ao vencimento"). Isso pode tornar o código mais legível e facilitar futuras alterações.
 - Mensagens de Log:
-    - As mensagens de log no método emiteAlertLoteVencimento são informativas, mas considerando que o método retorna um booleano indicando se algum lote está próximo do vencimento, talvez você queira tornar essas mensagens mais consistentes e informativas.
+    - As mensagens de log no método emiteAlertLoteVencimento são informativas, mas considerando que o método retorna um booleano indicando se algum lote está próximo do vencimento, talvez seria melhor tornar essas mensagens mais consistentes e informativas.
 
 &emsp;&emsp;Abaixo uma versão modificada do nosso código com algumas dessas possíveis melhorias:
 
