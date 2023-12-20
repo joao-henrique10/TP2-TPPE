@@ -53,6 +53,17 @@ public class CadastroProduto {
 ```
 
 &emsp;&emsp;Após análise vejo que o código que fizemos está bes estruturado, porém poderia ter algumas melhorias, como:
+
+- **Simplicidade e clareza**:
+	- O código é relativamente simples e fácil de entender.
+	- Os nomes das classes, métodos e variáveis são descritivos, o que facilita a compreensão do código.
+
+- **Idiomatico**
+  	-O código segue as convenções de nomenclatura do Java, o que é uma prática boa e ajuda na legibilidade.
+	- O uso de exceções específicas (DescricaoEmBrancoException e ValorInvalidoException) é uma boa prática, pois fornece informações claras sobre o tipo de problema encontrado.
+- Boas Interfaces:
+	- A interface pública (CadastroProduto) parece ser simples e intuitiva.
+	- A verificação de validação nos métodos (cadastrarProduto) ajuda a manter a integridade dos dados e evita que dados inválidos sejam armazenados.
 - Validação de Entrada:
   - A validação de entrada pode ser mais granular. Em vez de verificar cada campo individualmente, podemos criar métodos na classe Produto para validar diferentes aspectos, como validar se uma string está em branco ou se um valor numérico é válido. Isso pode tornar o código mais modular e fácil de manter.
 - Tratamento de Exceções:
@@ -176,6 +187,15 @@ public class GestaoTransacoes {
 
 &emsp;&emsp;Após análise vejo que o código que fizemos está bes estruturado, porém poderia ter algumas melhorias, como:
 
+- **Simplicidade e clareza**:
+  	- O código é relativamente claro e fácil de entender.
+	- A utilização de métodos bem-nomeados contribui para a legibilidade.
+ -  **Idiomático:**
+   	- O código segue as convenções de nomenclatura do Java.
+	- O uso de exceções específicas (ValorInvalidoException) é uma boa prática para indicar problemas específicos.
+- **Boas Interfaces:**
+  	- A interface pública parece ser razoavelmente intuitiva, fornecendo métodos para acessar informações sobre transações e cadastrar novas transações.
+	- A ideia de separar a lógica de atualização de estoque em um método separado (atualizarEstoque) é uma boa prática, pois mantém a modularidade e a legibilidade.
 - Validação de Entrada:
     - Assim como no código anterior, a validação de entrada pode ser mais granular. Podemos criar métodos utilitários na classe Transacao para verificar se a data é nula e se a lista de produtos está vazia, por exemplo.
 - Uso de Enums:
@@ -313,6 +333,15 @@ public class RastreamentoLoteValidade {
 
 &emsp;&emsp;Após análise vejo que o código que fizemos está bem estruturado, porém poderia ter algumas melhorias, como:
 
+- **Simplicidade e clareza**:
+  	- O código é relativamente simples e fácil de entender.
+	- O uso de métodos bem-nomeados contribui para a legibilidade.
+ -  **Idiomático:**
+   	- O código segue as convenções de nomenclatura do Java.
+	- A utilização de tipos de dados apropriados, como ArrayList para coleções dinâmicas, é boa prática.
+- **Boas Interfaces:**
+  	- A interface pública fornece métodos que parecem ser intuitivos, como quantidadeTotalProduto e emiteAlertLoteVencimento.
+	-A atualização do preço de venda dos produtos próximos ao vencimento é um comportamento interessante e está encapsulado no método emiteAlertLoteVencimento.
 - Nomenclatura de Métodos:
     - A nomenclatura dos métodos está bastante clara, mas consideramos adicionar um prefixo descritivo, como "calcular" ou "verificar", para tornar o propósito do método ainda mais óbvio.
 - Constantes para Números Mágicos:
