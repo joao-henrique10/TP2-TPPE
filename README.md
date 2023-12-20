@@ -54,6 +54,12 @@ public class CadastroProduto {
 
 &emsp;&emsp;Após análise vejo que o código que fizemos está bes estruturado, porém poderia ter algumas melhorias, como:
 
+- **Portabilidade**:
+	- O código é portável, pois não depende de características específicas de uma plataforma ou sistema operacional. Ele deve funcionar em diferentes ambientes de execução que suportam Java.
+- **Extensabilidade**:
+	- A extensibilidade do código pode ser melhorada considerando os seguintes pontos:
+		- Validação de Entrada:
+		- Mensagens de Exceção:
 - **Simplicidade e clareza**:
 	- O código é relativamente simples e fácil de entender.
 	- Os nomes das classes, métodos e variáveis são descritivos, o que facilita a compreensão do código.
@@ -187,6 +193,12 @@ public class GestaoTransacoes {
 
 &emsp;&emsp;Após análise vejo que o código que fizemos está bes estruturado, porém poderia ter algumas melhorias, como:
 
+- **Portabilidade**:
+	- O código é portável, pois não depende de características específicas de uma plataforma ou sistema operacional. Ele deve funcionar em diferentes ambientes de execução que suportam Java.
+- **Extensabilidade**:
+	- A extensibilidade do código pode ser melhorada considerando os seguintes pontos:
+		- Validação de Transação;
+		- Atualização de Estoque:
 - **Simplicidade e clareza**:
   	- O código é relativamente claro e fácil de entender.
 	- A utilização de métodos bem-nomeados contribui para a legibilidade.
@@ -333,6 +345,12 @@ public class RastreamentoLoteValidade {
 
 &emsp;&emsp;Após análise vejo que o código que fizemos está bem estruturado, porém poderia ter algumas melhorias, como:
 
+- **Portabilidade**:
+	- O código é portável, pois não depende de características específicas de uma plataforma ou sistema operacional. Ele deve funcionar em diferentes ambientes de execução que suportam Java.
+- **Extensabilidade**:
+	- A extensibilidade do código pode ser melhorada considerando os seguintes pontos:
+		- Mensagens de Log;
+		- Atualização de Preço;
 - **Simplicidade e clareza**:
   	- O código é relativamente simples e fácil de entender.
 	- O uso de métodos bem-nomeados contribui para a legibilidade.
