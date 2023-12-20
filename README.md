@@ -54,6 +54,10 @@ public class CadastroProduto {
 
 &emsp;&emsp;Após análise vejo que o código que fizemos está bes estruturado, porém poderia ter algumas melhorias, como:
 
+- **Modularidade**:
+	- O código da classe CadastroProduto tem uma boa modularidade, principalmente devido à separação de responsabilidades dos métodos específicos.
+- **Duplicidade:**
+	- Não possui;
 - **Portabilidade**:
 	- O código é portável, pois não depende de características específicas de uma plataforma ou sistema operacional. Ele deve funcionar em diferentes ambientes de execução que suportam Java.
 - **Extensabilidade**:
@@ -193,6 +197,10 @@ public class GestaoTransacoes {
 
 &emsp;&emsp;Após análise vejo que o código que fizemos está bes estruturado, porém poderia ter algumas melhorias, como:
 
+- **Modularidade**:
+	- O código da classe GestaoTransacoes tem uma boa modularidade, principalmente devido à separação de responsabilidades dos métodos específicos.
+- **Duplicidade**:
+	- Não possui;
 - **Portabilidade**:
 	- O código é portável, pois não depende de características específicas de uma plataforma ou sistema operacional. Ele deve funcionar em diferentes ambientes de execução que suportam Java.
 - **Extensabilidade**:
@@ -345,6 +353,10 @@ public class RastreamentoLoteValidade {
 
 &emsp;&emsp;Após análise vejo que o código que fizemos está bem estruturado, porém poderia ter algumas melhorias, como:
 
+- **Modularidade**:
+	- A classe RastreamentoLoteValidade tem uma boa modularidade, pois cada método tem uma responsabilidade clara. 
+- **Duplicidade**:
+	- Não possui;
 - **Portabilidade**:
 	- O código é portável, pois não depende de características específicas de uma plataforma ou sistema operacional. Ele deve funcionar em diferentes ambientes de execução que suportam Java.
 - **Extensabilidade**:
