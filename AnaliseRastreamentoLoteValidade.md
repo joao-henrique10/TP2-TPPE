@@ -64,18 +64,20 @@ public class RastreamentoLoteValidade {
 &emsp;&emsp;Após análise vejo que o código que fizemos está bem estruturado, porém poderia ter algumas melhorias, como:
 
 - **Modularidade**:
-	- A classe RastreamentoLoteValidade tem uma boa modularidade, pois cada método tem uma responsabilidade clara. 
+	- A classe RastreamentoLoteValidade tem uma boa modularidade, pois cada método tem uma responsabilidade clara e específica. 
 - **Duplicidade**:
-	- Não possui;
+	- O cóigo da classe não possui duplicidade;
 - **Portabilidade**:
-	- O código é portável, pois não depende de características específicas de uma plataforma ou sistema operacional. Ele deve funcionar em diferentes ambientes de execução que suportam Java.
+	- O código é portável, pois não depende de características específicas de uma plataforma ou sistema operacional. Ele deve funcionar em diferentes ambientes de execução que suportam Java, não alterando as características da classe java ao depender do dispositivo e plataforma.
 - **Extensabilidade**:
 	- A extensibilidade do código pode ser melhorada considerando os seguintes pontos:
 		- Mensagens de Log;
 		- Atualização de Preço;
+    		- Modificação do sistema de alerta para possibilitar adição de novos alertas específicos a partir dos parâmetros passados;  
 - **Simplicidade e clareza**:
   	- O código é relativamente simples e fácil de entender.
 	- O uso de métodos bem-nomeados contribui para a legibilidade.
+   	- Seria possível melhorar a nomeclatura do método emiteAlertLoteVencimento para verificarLoteProximoVencimento para deixar claro que o alerta é emitido quando próximo de vencimento; 
  -  **Idiomático:**
    	- O código segue as convenções de nomenclatura do Java.
 	- A utilização de tipos de dados apropriados, como ArrayList para coleções dinâmicas, é boa prática.
@@ -84,6 +86,7 @@ public class RastreamentoLoteValidade {
 	-A atualização do preço de venda dos produtos próximos ao vencimento é um comportamento interessante e está encapsulado no método emiteAlertLoteVencimento.
 - Nomenclatura de Métodos:
     - A nomenclatura dos métodos está bastante clara, mas consideramos adicionar um prefixo descritivo, como "calcular" ou "verificar", para tornar o propósito do método ainda mais óbvio.
+    - Seria possível melhorar a nomeclatura do método emiteAlertLoteVencimento para verificarLoteProximoVencimento para utilizar o termo no infinitivo, característico de verbo e também para padronizar no português a palavra alerta. 
 - Constantes para Números Mágicos:
     - Os números mágicos no código (como 10 e 0.8) podem ser substituídos por constantes com nomes descritivos para melhorar a legibilidade e facilitar futuras modificações.
 - Uso de Enums:
@@ -122,7 +125,7 @@ public class RastreamentoLoteValidade {
         return total;
     }
 
-    public boolean verificarAlertaLoteVencimento(ArrayList<Produto> produtos, Integer qdtLotesDiferentes) {
+    public boolean verificarLoteProximoVencimento(ArrayList<Produto> produtos, Integer qdtLotesDiferentes) {
         boolean controle = false;
         ArrayList<Boolean> lotesProximosVencimento = new ArrayList<>(Collections.nCopies(qdtLotesDiferentes, false));
         LocalDate dataAtual = LocalDate.now();
